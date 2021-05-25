@@ -1,7 +1,8 @@
 #title{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/titleback.jpg);
   /* background-color:#393e46; */
-  height: 100vh;
+  height: auto;
+
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -20,6 +21,13 @@ h1{
   line-height: 1.5;
   font-weight: 900;
 }
+/* titleimg */
+.titleimg{
+  width: 100%;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
 /* navbar */
 
 .logo{
@@ -46,11 +54,6 @@ h1{
   font-weight: bold;
 }
 
-/* titleimg */
-.titleimg{
-  width: 100%;
-    border-radius: 50px;
-}
 
   /* services */
   h2,h3{
@@ -104,6 +107,21 @@ h2{
     margin: 20px;
 }
 
+/* pricing */
+#pricing
+{
+  padding: 10px;
+  text-align: center;
+}
+.price-text
+{
+  line-height: 1.5;
+  font-size: 3rem;
+}
+.p-col
+{
+  padding: 3% 2%;
+}
 
 /* carouselclients */
 #clients{
@@ -124,4 +142,36 @@ h2{
 }
 #clients .carousel-item{
   padding: 7% 15%;
+}
+
+/* footer */
+#footer{
+  text-align: center;
+}
+.foot-icon{
+  color: black;
+  margin: 20px 10px;
+}
+.foot-icon:hover{
+  color: grey;
+}
+
+/* media query */
+@media (max-width:1028px) {
+ /* .container-fluid{
+   padding: 3% 15% 0 15%;
+ } */
+  #title{
+    text-align: center;
+  }
+  /* .title-img{
+    position: relative;
+    top: 15%;
+    left: 12%;
+
+  }
+  #features{
+  position: relative;
+  } */
+
 }
