@@ -7,6 +7,22 @@
   background-position: center;
   color: #fff;
 }
+/* header icon */
+.header-icon{
+  color: #fff;
+  margin: 0 10px;
+}
+.header-icon:hover{
+  color: grey;
+}
+.header-right{
+  text-align: right;
+}
+.header-left{
+  text-align: left;
+}
+
+/* body */
 body{
     font-family: "Montserrat-Black";
 
@@ -110,19 +126,135 @@ h2{
 /* pricing */
 #pricing
 {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
-.price-text
-{
-  line-height: 1.5;
-  font-size: 3rem;
-}
-.p-col
-{
-  padding: 3% 2%;
+#pricing .row{
+    color:black;
+    background-color:white;
+  padding: 20px 0 0;
 }
 
+#pricing .btn {
+    font-size: 16px;
+    padding: 11px 40px 10px;
+    border: 2px solid black;
+    background-color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    height: 50px;
+    display: inline-block;
+    transition: .25s ease-in;
+    color: #fff;
+}
+.btn:hover{
+   background-color: #fff;
+}
+.club-card-col {
+  transform: translateY(40px);
+  margin-bottom:auto;}
+  .club-card-col:nth-child(2) {
+    transform: translateY(0); }
+
+.club-card-item {
+    border:1px solid rgb(216 216 216);
+    margin-bottom:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #F7F7F7;
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.15);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 48px 20px 50px;
+  position: relative; }
+  .club-card-item:before {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    margin-top: 40px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 7px solid black;
+    transition: .4s ease-in-out;
+    pointer-events: none; }
+  .club-card-item:hover:before {
+    opacity: 1;
+    margin-top: 0; }
+  .club-card-item .price-cover {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Righteous", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 22px; }
+    .club-card-item .price-cover:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 45px;
+      height: 4px;
+      background-color: #f23849; }
+    .club-card-item .price-cover .price {
+      font-weight: bold;
+      font-size: 72px;
+      padding-right: 6px;
+      line-height: .75; }
+    .club-card-item .price-cover .date {
+        font-weight: bold;
+      font-size: 18px;
+      padding-left: 2px; }
+      .club-card-item .price-cover .date span {
+        text-align: left;
+        margin-left: -10px;
+        color: #fcbd56;
+        display: block;
+        line-height: .9;
+        font-size: 36px; }
+  .club-card-item .list {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 42px;
+    font-size: 1.2rem;
+  }
+    .club-card-item .list li {
+      border-bottom: 1px solid #474747;
+      padding: 11px 0; }
+      .club-card-item .list li:last-child {
+        border-bottom: none; }
+      .club-card-item .list li.item-excluded {
+        color: rgba(190, 190, 190, 0.66); }
+
+
+/* youtube vide */
+/*
+Reference: http://avexdesigns.com/responsive-youtube-embed/
+*/
+
+.vid {
+    position: relative;
+    padding-bottom: 40.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 /* carouselclients */
 #clients{
   text-align: center;
@@ -154,6 +286,11 @@ h2{
 }
 .foot-icon:hover{
   color: grey;
+
+}
+.footer-text{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* media query */
