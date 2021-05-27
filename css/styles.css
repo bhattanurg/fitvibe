@@ -149,8 +149,9 @@ h2{
     transition: .25s ease-in;
     color: #fff;
 }
-.btn:hover{
+#pricing .btn:hover{
    background-color: #fff;
+   color: black;
 }
 .club-card-col {
   transform: translateY(40px);
