@@ -421,11 +421,12 @@ textarea {
 	-webkit-transform: translateY(-50%);
 	        transform: translateY(-50%);
 	background-color: #FF7200;
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	line-height: 40px;
 	text-align: center;
 	border-radius: 3px;
+  padding-top: 10px;
 }
 .single-contact h5 {
 	font-size: 18px;
@@ -453,14 +454,33 @@ textarea {
 
 
 
+
+
+/* Google Form */
+
+#footer .google_form{
+    width: 100%;
+  }
+
+/* whatsapp icon text */
+.single-contact .whatsapp-text{
+
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+
 /* media query */
-@media (max-width:1028px) {
+@media (max-width:1228px) {
  /* .container-fluid{
    padding: 3% 15% 0 15%;
  } */
   #title{
     text-align: center;
+
+
   }
+
   /* .title-img{
     position: relative;
     top: 15%;
